@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+* {
+  outline:none;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+input {
+  margin:1;
+  padding:1px 2px;
+}
+body {
+  background: #252525;
+  display: grid;
+  width:100vw;
+  height:100vh;
+  grid-template-rows: 64px auto 100px;
+  grid-template-columns: auto 600px auto;
+  text-align:center;
+  font-family:'Roboto';
+  overflow:hidden;
+}
+header {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  user-select: none; 
+  background:#00ff06;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+main {
+  background:#ffffff;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: 'Roboto';
+  overflow: auto;
+  width: 600px;
+  border-radius: 5px;
+}
+#people {
+  background:#00ff06;
+  width:60%;
+  height:400px;
+  margin-left:20%;
+  margin-right:20%;
+  overflow:auto;
+  border-radius:7px;
+  color: #252525;
+}
+footer {
+  background:#252525;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display:grid;
+  grid-template-columns: auto 80px;
+  grid-template-rows: auto 20px;
+}
+button {
+  background:#00ff06;
+  background:#00ff06;
+  border:2px solid black;
+  user-select: none;
+}
+button:hover {
+  transition: all 0.5s ease-in-out;
+  cursor:pointer;
+  background: #00ff06;
+}
+main div.you {
+  text-align: left;
+  margin-left:15px;
+}
+main div.me {
+  text-align: right;
+  margin-right:15px;
+}
+textarea {
+  resize:none;
+  font-family:'Roboto';
+  font-size: 1.1em;
+  padding: 8px 16px;
+  border:3px solid #252525;
+  border-radius: 3px;
+}
+textarea:focus {
+  border:3px solid black;
+}
+#img {
+  float:left;
+  margin-right:10px;
+}
+#menu {
+  float:right;
+  margin-top:30px;
+}
+.btn {
+  width: 120px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.modal-content h1 {
+  margin:21.44px 0px;
+}
+.modal-content p {
+  margin:16px 0px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background:#252525; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgray; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray; 
+}
+pre {
+  font-family: "Roboto";
+}
+a, a:visited{
+  color:#252525;
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration:underline;
+}
+hr {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+label {
+  color: #252525;
+  cursor:pointer;
+}
+label:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    overflow: auto;
+  }
+}
